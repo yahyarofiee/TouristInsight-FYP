@@ -1,0 +1,162 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #001F3F;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 51, 102, 0.25);
+    backdrop-filter: blur(6px);
+    transition: all 0.25s ease;
+}
+
+nav.scrolled {
+    background: #003366;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* ===== BRAND ===== */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* 🔒 LOGO DIKUNCI DI SINI */
+.nav-brand img {
+    height: 36px;
+    width: auto;
+    max-height: 36px;
+    object-fit: contain;
+}
+
+.nav-brand h2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ===== MENU ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    padding-bottom: 4px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+}
+
+/* ================= PAGE HEADER ================= */
+.page-header {
+    background: linear-gradient(135deg, #005fa3, #003366);
+    color: #ffffff;
+    padding: 140px 10% 80px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    max-width: 900px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* ================= CONTENT ================= */
+.content {
+    padding: 70px 10%;
+}
+
+.insight-card {
+    background: #ffffff;
+    padding: 40px;
+    margin-bottom: 35px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.insight-card h2 {
+    font-size: 26px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.insight-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+footer span {
+    color: #ffcc00;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    nav {
+        padding: 12px 6%;
+    }
+
+    .nav-brand img {
+        height: 28px;
+    }
+
+    .nav-brand h2 {
+        font-size: 16px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .page-header {
+        padding: 120px 6% 70px;
+    }
+
+    .content {
+        padding: 40px 6%;
+    }
+}
