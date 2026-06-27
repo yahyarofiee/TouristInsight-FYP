@@ -114,6 +114,7 @@ TourismWebsite/
 ├── images/
 │   ├── home.png
 │   ├── about.png
+│   ├── dashboard1.png
 │   ├── dashboard.png
 │   └── insights.png
 │
