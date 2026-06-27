@@ -146,7 +146,6 @@ TourismWebsite/
 
 ## 📊 Interactive Dashboard
 
-![Dashboard](images/dashboard1.png)
 ![Dashboard](images/dashboard.png)
 
 ---
